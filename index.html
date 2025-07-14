@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    body {
+      background: url("/close-up-hourglass-filled-with-sand.jpg") center/cover no-repeat;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      border: 1px solid #000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      background: #f0f0f0;
+      width: 300px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-size: 1.2em;
+      min-width: 60px;
+    }
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    #count {
+      font-size: 2.5em;
+      margin: 20px 0;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="box">
+    <h1>Counter</h1>
+    <p id="count">0</p>
+    <div class="button">
+      <button onclick="incr()">+</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="decr()">-</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
